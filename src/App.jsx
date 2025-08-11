@@ -1,0 +1,28 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavbarMenu from "./components/NavbarMenu"; // Se importó el Navbar
+import Home from "./pages/Home";
+import Categorias from "./pages/Categorias";
+import ProductosCategoria from "./pages/ProductosCategoria";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Cart from "./pages/Cart";
+
+function App() {
+  return (
+    <Router>
+      {/* El NavbarMenu se renderiza aquí, fuera de las rutas */}
+      <NavbarMenu /> 
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categorias" element={<Categorias />} />
+          <Route path="/categoria/:nombre" element={<ProductosCategoria />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </main>
+    </Router>
+  );
+}
+
+export default App;
