@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
-import { Container, Row, Col, Button, ListGroup, Alert } from "react-bootstrap";
+import { Container, Row, Col, Button, ListGroup, Alert, Image } from "react-bootstrap";
 import CartContext from '../context/CartContext';
 import { Link } from "react-router-dom";
 
 function Cart() {
-  const { cart, removeItem } = useContext(CartContext);
+  const { cart, removeItem, clearCart } = useContext(CartContext);
 
   // Calcula el total del precio del carrito
-  const cartTotal = cart.reduce((acc, item) => acc + parseFloat(item.precio.replace('$', '').replace('.', '')), 0);
-  
+  const cartTotal = cart.reduce((acc, item) => acc + item.price, 0);
+
   // Función para agrupar productos duplicados y contar la cantidad
   const groupedCartItems = cart.reduce((acc, item) => {
     const existingItem = acc.find(prod => prod.id === item.id);
@@ -22,40 +22,38 @@ function Cart() {
 
   return (
     <Container className="my-5">
-      <h2 className="mb-4 text-center">Tu Carrito de Compras</h2>
+      <h2 className="mb-4 text-center fw-bold text-uppercase">Tu Carrito de Compras</h2>
       {cart.length === 0 ? (
-        <Alert variant="info" className="text-center">
-          El carrito está vacío. ¡<Link to="/">Explora nuestros productos</Link>!
+        <Alert variant="info" className="text-center rounded-4 shadow-sm p-4">
+          El carrito está vacío. ¡<Link to="/" className="alert-link fw-bold">Explora nuestros productos</Link>!
         </Alert>
       ) : (
         <>
-          <ListGroup className="mb-4">
+          <ListGroup className="mb-4 rounded-4 shadow-sm">
             {groupedCartItems.map((item, index) => (
-              <ListGroup.Item key={index}>
-                <Row className="align-items-center">
-                  <Col xs={7}>
-                    <h5 className="mb-1">{item.nombre}</h5>
-                    <p className="mb-1">Precio: {item.precio}</p>
-                    <p className="mb-0">Cantidad: {item.quantity}</p>
-                  </Col>
-                  <Col xs={3} className="text-end">
-                    <h5 className="mb-0">Total: ${parseFloat(item.precio.replace('$', '').replace('.', '')) * item.quantity}</h5>
-                  </Col>
-                  <Col xs={2} className="text-end">
-                    <Button variant="danger" size="sm" onClick={() => removeItem(item.id)}>
-                      Eliminar
-                    </Button>
-                  </Col>
-                </Row>
+              <ListGroup.Item key={index} className="d-flex align-items-center justify-content-between">
+                <div className="d-flex align-items-center">
+                  <Image src={item.image} alt={item.name} rounded style={{ width: '80px', height: '80px', objectFit: 'cover' }} className="me-3" />
+                  <div>
+                    <h5 className="mb-1 fw-bold">{item.name}</h5>
+                    <p className="mb-1 text-muted">Cantidad: {item.quantity}</p>
+                    <p className="mb-0 fw-bold">Total: ${(item.price * item.quantity).toFixed(2)}</p>
+                  </div>
+                </div>
+                <Button variant="danger" size="sm" onClick={() => removeItem(item.id)} className="rounded-pill">
+                  Eliminar
+                </Button>
               </ListGroup.Item>
             ))}
           </ListGroup>
-          <div className="d-flex justify-content-end mb-4">
-            <h4>Total del carrito: ${cartTotal.toFixed(2)}</h4>
+          <div className="d-flex justify-content-end align-items-center mb-4 p-3 bg-light rounded-4 shadow-sm">
+            <h4 className="fw-bold mb-0 me-3">Total del carrito:</h4>
+            <h4 className="text-primary fw-bold mb-0">${cartTotal.toFixed(2)}</h4>
           </div>
           <div className="d-grid gap-2">
-            <Button variant="success" size="lg">Proceder al pago</Button>
-            <Button variant="secondary" size="lg" as={Link} to="/">Continuar comprando</Button>
+            <Button variant="success" size="lg" className="fw-bold rounded-pill">Proceder al pago</Button>
+            <Button variant="dark" size="lg" as={Link} to="/" className="fw-bold rounded-pill">Continuar comprando</Button>
+            <Button variant="outline-danger" size="lg" onClick={clearCart} className="mt-3 fw-bold rounded-pill">Vaciar Carrito</Button>
           </div>
         </>
       )}
