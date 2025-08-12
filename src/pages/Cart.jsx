@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { Container, Row, Col, Button, ListGroup, Alert, Image } from "react-bootstrap";
 import CartContext from '../context/CartContext';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const { cart, removeItem, clearCart } = useContext(CartContext);
+  const navigate = useNavigate(); // Hook para la navegación
 
   // Calcula el total del precio del carrito
   const cartTotal = cart.reduce((acc, item) => acc + item.price, 0);
@@ -19,6 +20,11 @@ function Cart() {
     }
     return acc;
   }, []);
+
+  const handleProceedToPayment = () => {
+    // Redirigir a la página de transferencia
+    navigate("/transferencia");
+  };
 
   return (
     <Container className="my-5">
@@ -51,7 +57,15 @@ function Cart() {
             <h4 className="text-primary fw-bold mb-0">${cartTotal.toFixed(2)}</h4>
           </div>
           <div className="d-grid gap-2">
-            <Button variant="success" size="lg" className="fw-bold rounded-pill">Proceder al pago</Button>
+            {/* Botón para proceder al pago */}
+            <Button 
+              variant="success" 
+              size="lg" 
+              className="fw-bold rounded-pill"
+              onClick={handleProceedToPayment}
+            >
+              Proceder al pago
+            </Button>
             <Button variant="dark" size="lg" as={Link} to="/" className="fw-bold rounded-pill">Continuar comprando</Button>
             <Button variant="outline-danger" size="lg" onClick={clearCart} className="mt-3 fw-bold rounded-pill">Vaciar Carrito</Button>
           </div>
