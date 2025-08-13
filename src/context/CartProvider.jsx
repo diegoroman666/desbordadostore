@@ -1,34 +1,36 @@
+// Archivo: src/context/CartProvider.jsx
+// Este componente ahora incluye la función 'clearCart'
 import { useState } from 'react';
 import CartContext from './CartContext';
 
-// Este es el componente que proveerá el contexto.
-// Todo lo que esté dentro de este componente tendrá acceso al estado del carrito.
 function CartProvider({ children }) {
-    // Usamos useState para manejar el estado del carrito.
-    const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState([]);
 
-    // Función para agregar un producto al carrito.
-    const addItem = (item) => {
-        setCart((prevCart) => [...prevCart, item]);
-    };
+  const addItem = (item) => {
+    setCart((prevCart) => [...prevCart, item]);
+  };
 
-    // Función para eliminar un producto del carrito.
-    const removeItem = (itemId) => {
-        setCart((prevCart) => prevCart.filter(item => item.id !== itemId));
-    };
+  const removeItem = (itemId) => {
+    setCart((prevCart) => prevCart.filter(item => item.id !== itemId));
+  };
+  
+  // Función agregada para vaciar el carrito
+  const clearCart = () => {
+    setCart([]);
+  };
 
-    // El valor que se pasará a todos los componentes que usen este contexto.
-    const contextValue = {
-        cart,
-        addItem,
-        removeItem,
-    };
+  const contextValue = {
+    cart,
+    addItem,
+    removeItem,
+    clearCart, // Agregamos la función al valor del contexto
+  };
 
-    return (
-        <CartContext.Provider value={contextValue}>
-            {children}
-        </CartContext.Provider>
-    );
+  return (
+    <CartContext.Provider value={contextValue}>
+      {children}
+    </CartContext.Provider>
+  );
 }
 
 export default CartProvider;

@@ -1,3 +1,5 @@
+// Archivo: src/pages/Transfer.jsx
+// Este archivo redirige a la página de confirmación
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -6,9 +8,8 @@ function Transfer() {
   const navigate = useNavigate();
 
   const handlePayment = (method) => {
-    // Aquí puedes agregar la lógica para cada método de pago
-    alert(`Has seleccionado pagar con ${method}.`);
-    // En una aplicación real, aquí integrarías la API de Mercado Pago o Banco Estado.
+    console.log(`Has seleccionado pagar con ${method}. Ahora, ingresa tus datos de envío.`);
+    navigate("/confirmacion");
   };
 
   return (

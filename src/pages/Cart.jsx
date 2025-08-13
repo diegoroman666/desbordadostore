@@ -1,3 +1,5 @@
+// Archivo: src/pages/Cart.jsx
+// Este archivo sigue igual, ya que el código del botón estaba bien
 import React, { useContext } from "react";
 import { Container, Row, Col, Button, ListGroup, Alert, Image } from "react-bootstrap";
 import CartContext from '../context/CartContext';
@@ -5,12 +7,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const { cart, removeItem, clearCart } = useContext(CartContext);
-  const navigate = useNavigate(); // Hook para la navegación
+  const navigate = useNavigate();
 
-  // Calcula el total del precio del carrito
   const cartTotal = cart.reduce((acc, item) => acc + item.price, 0);
 
-  // Función para agrupar productos duplicados y contar la cantidad
   const groupedCartItems = cart.reduce((acc, item) => {
     const existingItem = acc.find(prod => prod.id === item.id);
     if (existingItem) {
@@ -22,7 +22,6 @@ function Cart() {
   }, []);
 
   const handleProceedToPayment = () => {
-    // Redirigir a la página de transferencia
     navigate("/transferencia");
   };
 
@@ -57,7 +56,6 @@ function Cart() {
             <h4 className="text-primary fw-bold mb-0">${cartTotal.toFixed(2)}</h4>
           </div>
           <div className="d-grid gap-2">
-            {/* Botón para proceder al pago */}
             <Button 
               variant="success" 
               size="lg" 
