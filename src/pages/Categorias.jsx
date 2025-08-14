@@ -20,32 +20,45 @@ function Categorias() {
 
   const categoriaActual = categories[currentIndex];
 
-  // Asignar ruta de imagen según categoría
   const getCategoryImage = (nombre) => {
     const imageName = nombre.toLowerCase();
-    return `/images/${imageName}.png`; // en public/images/
+    return `/images/${imageName}.png`;
   };
 
   return (
     <div className="page-container">
       <div className="categorias-container">
-        <button className="nav-btn" onClick={prevCategory}>◀</button>
+        <button className="nav-btn" style={{ borderColor: categoriaActual.color, color: categoriaActual.color }} onClick={prevCategory}>◀</button>
 
         <Link
           to={`/categoria/${categoriaActual.nombre.toLowerCase()}`}
           className="categoria-card"
         >
-          <div className="categoria-img-container">
+          <div
+            className="categoria-img-container"
+            style={{
+              borderColor: categoriaActual.color,
+              boxShadow: `0 0 15px ${categoriaActual.color}, 0 0 30px ${categoriaActual.color}, 0 0 45px ${categoriaActual.color}`
+            }}
+          >
             <img
               src={getCategoryImage(categoriaActual.nombre)}
               alt={categoriaActual.nombre}
               className="categoria-img"
             />
           </div>
-          <h2 className="categoria-nombre">{categoriaActual.nombre}</h2>
+          <h2
+            className="categoria-nombre"
+            style={{
+              color: categoriaActual.color,
+              textShadow: `0 0 5px ${categoriaActual.color}, 0 0 10px ${categoriaActual.color}`
+            }}
+          >
+            {categoriaActual.nombre}
+          </h2>
         </Link>
 
-        <button className="nav-btn" onClick={nextCategory}>▶</button>
+        <button className="nav-btn" style={{ borderColor: categoriaActual.color, color: categoriaActual.color }} onClick={nextCategory}>▶</button>
       </div>
     </div>
   );
