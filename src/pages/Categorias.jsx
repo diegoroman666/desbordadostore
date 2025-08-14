@@ -4,75 +4,46 @@ import { Link } from "react-router-dom";
 import "./Categorias.css";
 
 function Categorias() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevCategory = () => {
-    setActiveIndex((prev) => (prev - 1 + categories.length) % categories.length);
+    setCurrentIndex((prev) =>
+      prev === 0 ? categories.length - 1 : prev - 1
+    );
   };
 
   const nextCategory = () => {
-    setActiveIndex((prev) => (prev + 1) % categories.length);
+    setCurrentIndex((prev) =>
+      prev === categories.length - 1 ? 0 : prev + 1
+    );
   };
 
-  const getVisibleCategories = () => {
-    const total = categories.length;
-    const prev = categories[(activeIndex - 1 + total) % total];
-    const current = categories[activeIndex];
-    const next = categories[(activeIndex + 1) % total];
-    return [prev, current, next];
-  };
-
-  const visibleCategories = getVisibleCategories();
+  const cat = categories[currentIndex];
 
   return (
     <div className="categoria-container">
       <h2 className="categoria-title">Categorías</h2>
 
-      <div className="coverflow-wrapper">
+      <div className="categoria-slider-wrapper">
         <button className="slider-button left" onClick={prevCategory}>
           &#10094;
         </button>
 
-        <div className="coverflow">
-          {visibleCategories.map((cat, idx) => {
-            let style = {};
-            if (idx === 0) {
-              style = {
-                transform: "translateX(-160px) scale(0.8) rotateY(25deg)",
-                zIndex: 5,
-                opacity: 1,
-              };
-            } else if (idx === 1) {
-              style = {
-                transform: "translateX(0px) scale(1) rotateY(0deg)",
-                zIndex: 10,
-                opacity: 1,
-              };
-            } else if (idx === 2) {
-              style = {
-                transform: "translateX(160px) scale(0.8) rotateY(-25deg)",
-                zIndex: 5,
-                opacity: 1,
-              };
-            }
-
-            return (
-              <div
-                key={cat.id}
-                className="card coverflow-card"
-                style={{ ...style, "--hue": 60 + (activeIndex + idx) * 50 }}
-              >
-                <img
-                  src={`https://picsum.photos/300/200?random=${cat.id}`}
-                  alt={cat.nombre}
-                />
-                <h3 className="card-title">{cat.nombre}</h3>
-                <Link to={`/categoria/${cat.nombre.toLowerCase()}`}>
-                  <button className="card-button">Ver productos</button>
-                </Link>
-              </div>
-            );
-          })}
+        <div className="categoria-card">
+          <img
+            src={`https://picsum.photos/300/200?random=${cat.id}`}
+            alt={cat.nombre}
+            className="card-img-top"
+          />
+          <h3 className="card-title">{cat.nombre}</h3>
+          <Link to={`/categoria/${cat.nombre.toLowerCase()}`}>
+            <button
+              className="card-button"
+              style={{ "--hue": 60 + currentIndex * 50 }}
+            >
+              Ver productos
+            </button>
+          </Link>
         </div>
 
         <button className="slider-button right" onClick={nextCategory}>

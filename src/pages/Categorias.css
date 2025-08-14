@@ -1,10 +1,13 @@
 .categoria-container {
   padding: 2rem;
   background-color: #000;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .categoria-title {
+  text-align: center;
   font-family: "Times New Roman", serif;
   font-weight: bold;
   font-size: 2rem;
@@ -12,51 +15,54 @@
   margin-bottom: 2rem;
 }
 
-.coverflow-wrapper {
-  position: relative;
-  perspective: 1200px;
+/* Wrapper de slider con botones a los lados */
+.categoria-slider-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
 }
 
-.coverflow {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 300px;
-}
-
-.coverflow-card {
-  position: absolute;
-  width: 14rem;
-  padding: 1.5em 2em;
-  color: #eceff1;
-  background-color: transparent;
-  border: 1px solid #fff;
+/* Tarjeta de categoría central */
+.categoria-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.5rem 2rem;
   border-radius: 15px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
   text-align: center;
-  transform-style: preserve-3d;
+  color: #eceff1;
+  background-color: #111;
+  border: 1px solid hsl(var(--hue, 200), 80%, 50%);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: scale(1.1);
 }
 
-.coverflow-card img {
+.categoria-card img {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+/* Efecto ligero al pasar el dedo o cursor */
+.categoria-card:hover img {
+  transform: scale(1.05);
 }
 
 .card-title {
   font-family: "Times New Roman", serif;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .card-button {
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
-  background-color: hsl(var(--hue), 80%, 50%);
+  background-color: hsl(var(--hue, 200), 80%, 50%);
   border: none;
   color: #000;
   font-weight: bold;
@@ -77,11 +83,40 @@
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 50%;
-  margin: 0 1rem;
-  z-index: 20;
-  position: relative;
+  transition: background 0.2s;
 }
 
 .slider-button:hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Posición de botones en la fila */
+.slider-button.left {
+  order: 1;
+}
+
+.slider-button.right {
+  order: 3;
+}
+
+/* Hacer que tarjeta esté en el centro de la fila */
+.categoria-slider-wrapper > .categoria-card {
+  order: 2;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+  .categoria-slider-wrapper {
+    max-width: 90%;
+  }
+
+  .categoria-card {
+    width: 100%;
+    transform: scale(1.1);
+  }
+
+  .slider-button {
+    font-size: 1.8rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
