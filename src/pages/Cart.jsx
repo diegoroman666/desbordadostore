@@ -1,5 +1,5 @@
 // Archivo: src/pages/Cart.jsx
-// Este archivo sigue igual, ya que el código del botón estaba bien
+// Este archivo está correcto y no necesita cambios. Solo se muestra para referencia.
 import React, { useContext } from "react";
 import { Container, Row, Col, Button, ListGroup, Alert, Image } from "react-bootstrap";
 import CartContext from '../context/CartContext';

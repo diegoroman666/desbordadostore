@@ -1,5 +1,5 @@
 // Archivo: src/context/CartProvider.jsx
-// Este componente ahora incluye la función 'clearCart'
+// Este archivo está correcto y no necesita cambios. Solo se muestra para referencia.
 import { useState } from 'react';
 import CartContext from './CartContext';
 
@@ -14,7 +14,6 @@ function CartProvider({ children }) {
     setCart((prevCart) => prevCart.filter(item => item.id !== itemId));
   };
   
-  // Función agregada para vaciar el carrito
   const clearCart = () => {
     setCart([]);
   };
@@ -23,7 +22,7 @@ function CartProvider({ children }) {
     cart,
     addItem,
     removeItem,
-    clearCart, // Agregamos la función al valor del contexto
+    clearCart,
   };
 
   return (

@@ -1,121 +1,87 @@
-/* Importamos una fuente de Google Fonts para un aspecto más moderno */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-:root {
-  /* Definimos variables CSS para una paleta de colores consistente */
-  --primary-color: #6c757d; /* Gris oscuro para el navbar */
-  --secondary-color: #f8f9fa; /* Gris claro para fondos */
-  --accent-color: #ff69b4; /* Rosa vibrante para acentos */
-  --text-dark: #212529; /* Negro para textos principales */
-  --text-muted: #6c757d; /* Gris para textos secundarios */
+/* ====== Navbar moderno (glass) ====== */
+.navbar-glass {
+  background: rgba(30, 32, 36, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.brand-strong {
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: #ffffff !important;
+}
+.nav-modern {
+  color: #e9ecef !important;
+  font-weight: 600;
+  margin-right: .25rem;
+}
+.nav-modern.active {
+  color: #ffd54d !important; /* dorado */
+}
+.search-input {
+  min-width: 240px;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--secondary-color);
-  color: var(--text-dark);
+/* ====== Slider (marquee bar) ====== */
+.slider-bar {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0b0b0b 0%, #151515 100%);
+  border-bottom: 1px solid #2a2a2a;
+  padding: 12px 0;
+}
+.slider-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: move-text 100s linear infinite, fade-in 1s ease-out both;
+  font-family: "Times New Roman", serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.3px;
+  padding-left: 100%; /* Empieza fuera a la derecha */
+}
+.neon-gold {
+  color: #ffd54d;
+  text-shadow:
+    0 0 6px rgba(255, 215, 0, 0.75),
+    0 0 12px rgba(255, 191, 0, 0.6),
+    0 0 24px rgba(255, 191, 0, 0.4);
+}
+@keyframes move-text {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
-/* Estilos para el contenedor principal */
-.container {
-  max-width: 1200px;
+/* ====== Tarjetas de producto ====== */
+.card-product {
+  transition: transform .2s ease, box-shadow .2s ease;
+  background: #fff;
+}
+.card-product:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
+}
+.card-product-img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  border-radius: 0 0 0 0;
 }
 
-/* Estilos para las cards de productos */
-.card {
-  border: none;
-  border-radius: 1rem;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* Limitar descripción a 2 líneas para evitar “bloques” de texto pegados */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-lamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card-img-top {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  height: 300px;
-  object-fit: cover;
-}
-
-.card-title {
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.card-text {
-  color: var(--text-muted);
-}
-
-/* Estilos para botones */
-.btn-dark {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.btn-dark:hover {
-  background-color: #5a6268;
-  transform: scale(1.05);
-}
-
-.btn-success {
-  background-color: #28a745;
-  border-color: #28a745;
-}
-
-.btn-success:hover {
-  background-color: #218838;
-}
-
-.btn-outline-danger {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.btn-outline-danger:hover {
-  background-color: var(--accent-color);
-  color: #fff;
-}
-
-/* Estilos para el navbar */
-.navbar {
-  background-color: var(--primary-color) !important;
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+/* Título de sección */
+.section-title {
   letter-spacing: 1px;
-}
-
-.nav-link {
-  font-weight: 400;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-  color: var(--accent-color) !important;
-}
-
-.badge {
-  font-size: 0.7em;
-  padding: 0.35em 0.65em;
-  transform: translate(50%, -50%);
-}
-
-/* Estilos para el carrito */
-.list-group-item {
-  border-radius: 1rem;
-  margin-bottom: 0.5rem;
-  padding: 1.5rem;
-}
-
-/* Estilos para el slider (si lo usas) */
-.carousel-caption {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }

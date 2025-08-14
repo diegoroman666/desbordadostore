@@ -1,27 +1,27 @@
-import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import React, { useMemo } from "react";
 
-function Slider() {
-  const items = [
-    { producto: "Vestido Rojo", precio: "$39.990" },
-    { producto: "Blusa Elegante", precio: "$24.990" },
-    { producto: "Chaqueta Casual", precio: "$54.990" },
-    { producto: "Falda Primavera", precio: "$29.990" },
-    { producto: "Pantalón Formal", precio: "$34.990" },
-  ];
+/**
+ * Barra tipo marquee: texto aparece al cargar (fade-in) y se mueve de derecha a izquierda.
+ * - Fuente: Times New Roman, peso alto.
+ * - Color neon dorado con glow.
+ * - Si aún no hay items, muestra un placeholder.
+ */
+export default function Slider({ items = [] }) {
+  const adText = useMemo(() => {
+    if (items.length > 0) {
+      return items
+        .map((it) => `${it.name} - $${Number(it.price).toFixed(2)}`)
+        .join("  |  ");
+    }
+    return "Nuevas colecciones · Envío rápido · Descuentos de temporada";
+  }, [items]);
+
+  // Repetimos para que el scroll sea contínuo sin cortes
+  const fullText = `${adText}  |  ${adText}  |  ${adText}  |  ${adText}`;
 
   return (
-    <Carousel variant="dark" interval={2500} className="mb-4">
-      {items.map((item, index) => (
-        <Carousel.Item key={index}>
-          <div className="text-center p-4 bg-light">
-            <h4>{item.producto}</h4>
-            <h5 className="text-primary fw-bold">{item.precio}</h5>
-          </div>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <div className="slider-bar">
+      <div className="slider-track neon-gold">{fullText}</div>
+    </div>
   );
 }
-
-export default Slider;
