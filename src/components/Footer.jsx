@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p className="footer-text">
-          Cioro Store · Sitio desarrollado por Diego Román · Derechos reservados.
+          Cioro Store · © Derechos reservados.
         </p>
       </div>
 
