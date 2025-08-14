@@ -162,3 +162,34 @@
   color: #FFD700;
   text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
 }
+
+/* Tema claro y oscuro */
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Estilo sofisticado para el título */
+.section-title-custom {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+}
+
+/* Botón para cambiar tema */
+.theme-toggle-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
