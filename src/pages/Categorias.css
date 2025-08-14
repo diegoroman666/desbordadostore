@@ -1,0 +1,77 @@
+/* Contenedor general */
+.categoria-container {
+  padding: 2rem;
+  background-color: #000;
+}
+
+/* Título central */
+.categoria-title {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* Slider horizontal */
+.categoria-slider {
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+/* Tarjeta de categoría */
+.card {
+  --flow-space: 0.5em;
+  --saturation: 80%;
+  --lightness: 50%;
+  flex: 0 0 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  align-items: start;
+  text-align: center;
+  color: #eceff1;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  border-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-family: "Times New Roman", serif;
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón de la tarjeta */
+.card-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.card-button:hover {
+  opacity: 0.8;
+}

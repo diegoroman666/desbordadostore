@@ -1,33 +1,48 @@
-import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { categories } from "../data/Products"; // Importamos las categorías del nuevo archivo
+import React, { useRef, useEffect } from "react";
+import { categories } from "../data/Products";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import "./Categorias.css"; // Importamos los estilos
 
 function Categorias() {
+  const sliderRef = useRef();
+
+  useEffect(() => {
+    const cards = sliderRef.current.children;
+
+    // Animación horizontal continua con GSAP
+    gsap.fromTo(
+      cards,
+      { x: "100%" },
+      {
+        x: "-100%",
+        duration: 20,
+        repeat: -1,
+        ease: "linear",
+        stagger: 0.5,
+      }
+    );
+  }, []);
+
   return (
-    <Container className="my-5">
-      <h2 className="mb-5 text-center fw-bold text-uppercase">Categorías</h2>
-      <Row className="g-4 justify-content-center">
-        {categories.map((cat) => (
-          <Col xs={12} sm={6} md={4} lg={3} key={cat.id}>
-            <Card className="shadow-lg h-100 text-center border-0 rounded-4 overflow-hidden">
-              <Card.Img
-                variant="top"
-                src={`https://picsum.photos/300/200?random=${cat.id}`}
-                alt={cat.nombre}
-                className="card-img-top"
-              />
-              <Card.Body className="d-flex flex-column justify-content-center align-items-center p-4">
-                <Card.Title className="fw-bold fs-5 text-dark">{cat.nombre}</Card.Title>
-                <Link to={`/categoria/${cat.nombre.toLowerCase()}`} className="mt-3">
-                  <Button variant="dark" className="fw-bold rounded-pill">Ver productos</Button>
-                </Link>
-              </Card.Body>
-            </Card>
-          </Col>
+    <div className="categoria-container">
+      <h2 className="categoria-title">Categorías</h2>
+      <div className="categoria-slider" ref={sliderRef}>
+        {categories.map((cat, idx) => (
+          <div className="card" key={cat.id} style={{ "--hue": 60 + idx * 50 }}>
+            <img
+              src={`https://picsum.photos/300/200?random=${cat.id}`}
+              alt={cat.nombre}
+              className="card-img-top"
+            />
+            <h3 className="card-title">{cat.nombre}</h3>
+            <Link to={`/categoria/${cat.nombre.toLowerCase()}`}>
+              <button className="card-button">Ver productos</button>
+            </Link>
+          </div>
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 }
 

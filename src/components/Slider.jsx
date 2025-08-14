@@ -1,23 +1,30 @@
+// src/components/Slider.jsx
 import React, { useMemo } from "react";
+import { products } from "../data/Products"; // tu data completa
 
-/**
- * Barra tipo marquee: texto aparece al cargar (fade-in) y se mueve de derecha a izquierda.
- * - Fuente: Times New Roman, peso alto.
- * - Color neon dorado con glow.
- * - Si aún no hay items, muestra un placeholder.
- */
-export default function Slider({ items = [] }) {
+export default function Slider() {
+  // Seleccionamos 12 productos destacados (los primeros 2 de cada categoría)
+  const featured = useMemo(() => {
+    const categories = ["Vestidos", "Blusas", "Chaquetas", "Faldas", "Pantalones"];
+    let result = [];
+    categories.forEach((cat) => {
+      const filtered = products.filter((p) => p.category === cat).slice(0, 2);
+      result = result.concat(filtered);
+    });
+    return result;
+  }, []);
+
   const adText = useMemo(() => {
-    if (items.length > 0) {
-      return items
-        .map((it) => `${it.name} - $${Number(it.price).toFixed(2)}`)
+    if (featured.length > 0) {
+      return featured
+        .map((it) => `${it.name} - $${Number(it.price).toFixed(0)}`)
         .join("  |  ");
     }
     return "Nuevas colecciones · Envío rápido · Descuentos de temporada";
-  }, [items]);
+  }, [featured]);
 
-  // Repetimos para que el scroll sea contínuo sin cortes
-  const fullText = `${adText}  |  ${adText}  |  ${adText}  |  ${adText}`;
+  // Repetimos solo 2 veces para un scroll continuo suave
+  const fullText = `${adText}  |  ${adText}`;
 
   return (
     <div className="slider-bar">

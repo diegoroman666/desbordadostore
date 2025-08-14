@@ -1,0 +1,164 @@
+/* ====== Home.css ====== */
+.home-wrap {
+    padding: 0;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.neon-gold {
+    color: #FFD700;
+    text-shadow: 0 0 3px #FFD700, 0 0 6px #FFD700, 0 0 12px #FFA500;
+}
+
+.category-block {
+    margin: 2rem 0 3rem;
+    position: relative;
+}
+
+.category-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.category-viewport {
+    overflow: hidden;
+    position: relative;
+    border-radius: 14px;
+}
+
+.category-track {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 0.25rem 1rem;
+    will-change: transform;
+}
+
+/* Tarjeta */
+.card-product {
+    min-width: 260px;
+    flex: 0 0 auto;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
+}
+
+.card-product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-elegant {
+    border-radius: 999px;
+    padding: 0.55rem 1.25rem;
+    font-weight: 700;
+}
+
+.price-clp {
+    color: #0d6efd;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+/* Flechas tipo Netflix */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.85);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.nav-arrow-left {
+    left: 8px;
+}
+
+.nav-arrow-right {
+    right: 8px;
+}
+
+.fade-left,
+.fade-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 64px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 576px) {
+    .card-product {
+        min-width: 220px;
+    }
+
+    .card-product-img {
+        height: 180px;
+    }
+}
+
+.slider-bar {
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  background: #000; /* opcional para contraste */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.neon-gold {
+  color: #FFD700;
+  text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+}
