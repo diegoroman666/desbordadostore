@@ -193,3 +193,80 @@
   justify-content: center;
   font-size: 1.2rem;
 }
+
+/* Tema claro y oscuro */
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Estilo sofisticado para el título */
+.section-title-custom {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+}
+
+/* Botón para cambiar tema */
+.theme-toggle-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Estilos generales del título */
+.section-title {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  margin: 2.5rem 0 1.5rem;
+}
+
+/* Botón flotante para cambiar tema */
+.theme-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+}
+
+/* Tema claro */
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-theme .section-title {
+  color: #000;
+}
+
+/* Tema oscuro */
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-theme .section-title {
+  color: #fff;
+}
+
+.dark-theme .card-product {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.dark-theme .text-muted {
+  color: #ffffff !important;
+}
