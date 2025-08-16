@@ -4,7 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import CartContext from '../context/CartContext';
 import "./NavbarMenu.css";
 
-function NavbarMenu({ theme, toggleTheme }) {
+// eslint-disable-next-line no-empty-pattern
+function NavbarMenu({  }) {
   const { cart } = useContext(CartContext);
   const cartItemCount = cart.length;
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,8 +20,9 @@ function NavbarMenu({ theme, toggleTheme }) {
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="modern-navbar shadow-lg p-3">
-      <Container>
-        {/* LOGO ANIMADO + TEXTO */}
+      <Container className="d-flex align-items-center justify-content-between">
+
+        {/* IZQUIERDA: LOGO */}
         <Navbar.Brand as={Link} to="/" className="navbar-brand-custom">
           <div className="navbar-logo-animated">
             <span className="logo-part-1">Ci</span>
@@ -33,13 +35,10 @@ function NavbarMenu({ theme, toggleTheme }) {
           <span className="store-text">Store</span>
         </Navbar.Brand>
 
-        {/* Botón tema fijo en móvil */}
-        <button className="theme-btn" onClick={toggleTheme}>
-          {theme === 'light' ? '🌙' : '☀️'}
-        </button>
+        {/* CENTRO: BOTÓN HAMBURGUESA (solo visible en pantallas pequeñas) */}
+        <Navbar.Toggle aria-controls="menu" className="custom-toggler mx-auto d-lg-none" />
 
-        {/* Botón hamburguesa */}
-        <Navbar.Toggle aria-controls="menu" className="custom-toggler" />
+        {/* MENÚ COLAPSABLE */}
         <Navbar.Collapse id="menu">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/" className="arabic-style-link">Inicio</Nav.Link>
@@ -73,6 +72,7 @@ function NavbarMenu({ theme, toggleTheme }) {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );

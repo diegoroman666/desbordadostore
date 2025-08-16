@@ -188,3 +188,27 @@
   }
 }
 
+/* ====== Botón Tema Claro-Oscuro ====== */
+.theme-btn {
+  display: none; /* oculto en escritorio */
+}
+@media (max-width: 576px) {
+  .theme-btn {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    color: #FFD700;
+    cursor: pointer;
+    z-index: 1200;
+  }
+
+  .custom-toggler {
+    margin-right: 3rem; /* deja espacio para el botón de tema */
+    z-index: 1100;
+  }
+}
