@@ -6,8 +6,8 @@ export const products = [
     category: "Vestidos",
     name: "Vestido Rojo Elegante",
     description: "Perfecto para cenas y eventos especiales.",
-    price: 39.990,
-    image: "https://images.pexels.com/photos/10543666/pexels-photo-10543666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    price: 39.9900,
+    image: "https://cdnx.jumpseller.com/kadrihel1/image/23233682/resize/635/635?1693429363"
   },
   {
     id: 102,
@@ -15,7 +15,7 @@ export const products = [
     name: "Vestido Floral Verano",
     description: "Fresco y cómodo para días soleados.",
     price: 24.990,
-    image: "https://images.pexels.com/photos/1039868/pexels-photo-1039868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2023/04/21/1682047287804e4b7faf8da83a5bf97d357868ec51_thumbnail_560x.webp"
   },
   {
     id: 103,
@@ -23,7 +23,7 @@ export const products = [
     name: "Vestido Negro Corto",
     description: "Un clásico que nunca pasa de moda.",
     price: 34.990,
-    image: "https://images.pexels.com/photos/13562309/pexels-photo-13562309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://content.instyle.es/medio/2024/11/19/vestido_dde4cd2b_241119122110_750x1125.webp"
   },
   {
     id: 104,
@@ -31,7 +31,7 @@ export const products = [
     name: "Vestido Largo Satinado",
     description: "Corte fluido y caída elegante para ocasiones formales.",
     price: 54.990,
-    image: "https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2024/07/29/55/172221684158f7312216b12798338ea4d60209c467_thumbnail_405x.webp"
   },
   {
     id: 105,
@@ -39,7 +39,7 @@ export const products = [
     name: "Vestido Midi Casual",
     description: "Versátil, para oficina o salida de día.",
     price: 29.990,
-    image: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/v4/j/pi/2025/11/01/c7/176198763868091f73e215186cff46a86afeee96e4_thumbnail_405x.webp"
   },
   {
     id: 106,
@@ -47,7 +47,7 @@ export const products = [
     name: "Vestido de Encaje",
     description: "Detalles de encaje y ajuste femenino.",
     price: 45.990,
-    image: "https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77085656_96_B.jpg?imwidth=2048&imdensity=1&ts=1723478817207"
   },
   {
     id: 107,
@@ -55,7 +55,7 @@ export const products = [
     name: "Vestido Azul Noche",
     description: "Perfecto para eventos nocturnos y elegantes.",
     price: 46.990,
-    image: "https://images.pexels.com/photos/1002645/pexels-photo-1002645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://i5.walmartimages.com/asr/911f4cf1-ff23-4c29-9e3f-a484bd4e10aa.f0a48b1cbae731bfc3749f21e1615ed0.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
   },
   {
     id: 108,
@@ -63,7 +63,7 @@ export const products = [
     name: "Vestido Casual Rayas",
     description: "Ligero y cómodo para el día a día.",
     price: 23.990,
-    image: "https://images.pexels.com/photos/1082526/pexels-photo-1082526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S79f937b09c5c44c894b0c4fc0de1f0d1i.jpg_960x960q75.jpg_.avif"
   },
   {
     id: 109,
@@ -71,7 +71,7 @@ export const products = [
     name: "Vestido Maxi Veraniego",
     description: "Fluido y fresco, ideal para vacaciones.",
     price: 32.990,
-    image: "https://images.pexels.com/photos/1549208/pexels-photo-1549208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://www.babbaki.com/wp-content/uploads/2025/03/vestido-veraniego-sin-mangas-floral.jpg"
   },
   {
     id: 110,
@@ -79,7 +79,7 @@ export const products = [
     name: "Vestido de Fiesta Brillante",
     description: "Llamativo y elegante para celebraciones.",
     price: 59.990,
-    image: "https://images.pexels.com/photos/2868642/pexels-photo-2868642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://www.lunss.com/uploads/product/1/Y/1Y297/elegant-black-glitter-off-shoulder-slit-sheath-prom-dress-1.webp"
   },
   {
     id: 111,
@@ -87,7 +87,7 @@ export const products = [
     name: "Vestido Midi Estampado",
     description: "Cómodo y versátil para salidas casuales.",
     price: 28.990,
-    image: "https://images.pexels.com/photos/2929991/pexels-photo-2929991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://nolita-cuu.com/wp-content/uploads/2025/04/img_0319-scaled.jpeg"
   },
   {
     id: 112,
@@ -95,7 +95,7 @@ export const products = [
     name: "Vestido Transparente Elegante",
     description: "Toque sofisticado con transparencia sutil.",
     price: 54.990,
-    image: "https://images.pexels.com/photos/10309330/pexels-photo-10309330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S2ac5c9f74e4240638782e3adf109f0a8s.jpg_640x640q75.jpg_.avif"
   },
 
   // ===== Blusas (12) =====
