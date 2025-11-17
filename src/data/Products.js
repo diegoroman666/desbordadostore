@@ -105,7 +105,7 @@ export const products = [
     name: "Blusa Blanca Clásica",
     description: "Combinable con cualquier estilo.",
     price: 19.990,
-    image: "https://images.pexels.com/photos/18485230/pexels-photo-18485230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT12i9cmTv4DzWQ7mrdwl9tdweCWZcjRQo8aAMe8_osBLQdwx8OqgwRFObLsWDFV331b525zt6Ilq-QUMS_t0-1yBcdl1GquOh5KNH2VWbFgm-axOxxrb8mkYo"
   },
   {
     id: 202,
@@ -113,7 +113,7 @@ export const products = [
     name: "Blusa Azul Satinada",
     description: "Suave al tacto y con caída elegante.",
     price: 24.990,
-    image: "https://images.pexels.com/photos/15729487/pexels-photo-15729487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2024/09/20/76/1726809489c72f8051bc062d317878df4c366f94c0_thumbnail_405x.webp"
   },
   {
     id: 203,
@@ -121,7 +121,7 @@ export const products = [
     name: "Blusa Negra de Encaje",
     description: "Ideal para la noche y eventos especiales.",
     price: 29.990,
-    image: "https://images.pexels.com/photos/10430048/pexels-photo-10430048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.kwcdn.com/product/fancy/aa2bf72b-2a8f-4662-b292-f2a7723413ea.jpg?imageView2/2/w/800/q/70/format/webp"
   },
   {
     id: 204,
@@ -129,7 +129,7 @@ export const products = [
     name: "Top Cropped Trend",
     description: "Corte moderno para looks urbanos.",
     price: 17.990,
-    image: "https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2024/08/21/86/17242126109dd8b98224c96f73248ecfb1cfe29a8d_thumbnail_405x.webp"
   },
   {
     id: 205,
@@ -137,15 +137,15 @@ export const products = [
     name: "Blusa con Volantes",
     description: "Aporta volumen y movimiento al outfit.",
     price: 21.990,
-    image: "https://images.pexels.com/photos/1159671/pexels-photo-1159671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-  },
+    image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTkyiefMZOR6MDfe3v6LRpnaLjcpP9bAwu0cylFBlC3TVpwd53A8oXD9qLmbNBgQGKFNjcl3IZYDbU5IViHfKePXiI4XbwplOurKDjHlU1-fGeiNQXSepEV"
+    },
   {
     id: 206,
     category: "Blusas",
     name: "Camisa Oversize Rayas",
     description: "Diseño cómodo y estiloso para el día a día.",
     price: 27.990,
-    image: "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sb26d0f2ada134b0aa7e98225e334286eF.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 207,
@@ -153,7 +153,7 @@ export const products = [
     name: "Blusa Manga Larga Floral",
     description: "Ideal para combinar con jeans o faldas.",
     price: 24.990,
-    image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS-CS_LuzrsPnOBFWxAmbQWWve7jCCoustcgkn-uLRwWPzY_w9easJZ5ozjcov9WAkmw82QyXixrK4V_AnIUjBl-MlC7L4s6rG1yiWPb8ckp0bxCTySyBFoKg&usqp=CAc"
   },
   {
     id: 208,
@@ -161,7 +161,7 @@ export const products = [
     name: "Blusa de Seda",
     description: "Suave, elegante y ligera para ocasiones especiales.",
     price: 39.990,
-    image: "https://images.pexels.com/photos/1016640/pexels-photo-1016640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2024/12/06/d5/173346479859c20491021c710f5c3bc0f737c4b601_thumbnail_405x.webp"
   },
   {
     id: 209,
@@ -169,7 +169,7 @@ export const products = [
     name: "Blusa con Lazo",
     description: "Perfecta para un look romántico y femenino.",
     price: 26.990,
-    image: "https://images.pexels.com/photos/1983332/pexels-photo-1983332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2024/01/26/5c/1706246055ed72d340ab1e4993395df3d3043911e6_thumbnail_405x.webp"
   },
   {
     id: 210,
@@ -177,7 +177,7 @@ export const products = [
     name: "Blusa Off Shoulder",
     description: "Exhibe hombros y añade estilo casual.",
     price: 29.990,
-    image: "https://images.pexels.com/photos/2868521/pexels-photo-2868521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQG9cz2HiA7CyT21ON-8VrSjHJ4is5ZQ-pbpyze2Hj3v8pjtAe_F6M5im78YULGZOObseesp78BaxROrRq8hjbk_1PQeTBUrsbxchBPJjDHsZDvgD35w1iF"
   },
   {
     id: 211,
@@ -185,7 +185,7 @@ export const products = [
     name: "Blusa Estampado Geométrico",
     description: "Corte moderno con patrón llamativo.",
     price: 25.990,
-    image: "https://images.pexels.com/photos/2983492/pexels-photo-2983492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://julio.com/media/catalog/product/2/4/blusa-camisera-satinada-estampado-geometrico-con-cenefa.jpg?quality=80&bg-color=255,255,255&height=638&width=508&canvas=508:638"
   },
   {
     id: 212,
@@ -193,7 +193,7 @@ export const products = [
     name: "Top Lino Veraniego",
     description: "Ligero y fresco para días calurosos.",
     price: 21.990,
-    image: "https://images.pexels.com/photos/2983472/pexels-photo-2983472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Secde93e5a0824762b4cfee0f12271d64E.jpg_640x640q75.jpg_.avif"
   },
 
   // ===== Chaquetas (12) =====
@@ -205,7 +205,7 @@ export const products = [
     name: "Chaqueta de Cuero Negra",
     description: "Estilo y protección en un solo producto.",
     price: 89.990,
-    image: "https://images.pexels.com/photos/14848381/pexels-photo-14848381.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sbf86961dd7b94d1a819a9293d9a62584j.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 302,
@@ -213,7 +213,7 @@ export const products = [
     name: "Blazer Estructurado",
     description: "Elegante para looks de oficina y eventos.",
     price: 74.990,
-    image: "https://images.pexels.com/photos/6705771/pexels-photo-6705771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S6c8c4e7c03984a33b78abe12e6985560U.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 303,
@@ -221,7 +221,7 @@ export const products = [
     name: "Chaqueta Acolchada",
     description: "Abrigo ligero y caliente para el frío.",
     price: 64.990,
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sb4c78c8e772d4f5789b696087881c972T.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 304,
@@ -229,7 +229,7 @@ export const products = [
     name: "Cazadora Denim",
     description: "Clásica y resistente para cualquier temporada.",
     price: 54.990,
-    image: "https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S7f169687698948b194f207d685aeb5dcB.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 305,
@@ -237,7 +237,7 @@ export const products = [
     name: "Trench Ligero",
     description: "Corte largo impermeable ideal para lluvia ligera.",
     price: 99.990,
-    image: "https://images.pexels.com/photos/3771063/pexels-photo-3771063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S0285f8282add48719a212ba5fbb1e14be.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 306,
@@ -245,7 +245,7 @@ export const products = [
     name: "Chaqueta Bomber",
     description: "Diseño urbano con acabado moderno.",
     price: 59.990,
-    image: "https://images.pexels.com/photos/2983462/pexels-photo-2983462.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sff7cf7b15cef41d584331b03ab02627dR.jpg_960x960q75.jpg_.avif"
   },
   {
     id: 307,
@@ -253,7 +253,7 @@ export const products = [
     name: "Chaqueta Impermeable",
     description: "Protección contra la lluvia y viento con estilo.",
     price: 84.990,
-    image: "https://images.pexels.com/photos/4283405/pexels-photo-4283405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sbf36272e532f48a6bcb8953501e96c953.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 308,
@@ -261,7 +261,7 @@ export const products = [
     name: "Chaqueta Lana",
     description: "Cálida y elegante para temporadas frías.",
     price: 69.990,
-    image: "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S1522591c3d2247beb6b13944654e72d0G.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 309,
@@ -269,7 +269,7 @@ export const products = [
     name: "Chaqueta Outdoor",
     description: "Perfecta para aventuras al aire libre.",
     price: 77.990,
-    image: "https://images.pexels.com/photos/2988635/pexels-photo-2988635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://www.ixon.com/sites/default/files/inline-images/BREATH1.png"
   },
   {
     id: 310,
@@ -277,7 +277,7 @@ export const products = [
     name: "Chaqueta Cuello Alto",
     description: "Clásica y sofisticada para looks urbanos.",
     price: 65.990,
-    image: "https://images.pexels.com/photos/1549207/pexels-photo-1549207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S611fc715cba141999518947628b6b5e7X.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 311,
@@ -285,7 +285,7 @@ export const products = [
     name: "Blazer Largo Negro",
     description: "Perfecto para oficina y eventos formales.",
     price: 84.990,
-    image: "https://images.pexels.com/photos/2983463/pexels-photo-2983463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S058c8c4b5c9c44d1b650a77c4bdc49cdO.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 312,
@@ -293,7 +293,7 @@ export const products = [
     name: "Chaqueta Casual Verde",
     description: "Ligera y cómoda para el día a día.",
     price: 62.990,
-    image: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sd9405a35f4e449199053d8353c388b576.jpg_640x640q75.jpg_.avif"
   },
 
   // ===== Faldas (12) =====
