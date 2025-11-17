@@ -303,7 +303,7 @@ export const products = [
     name: "Falda Negra Formal",
     description: "Ideal para la oficina o reuniones.",
     price: 22.990,
-    image: "https://images.pexels.com/photos/17691516/pexels-photo-17691516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/images3_pi/2023/10/18/25/1697611729df853b28506860e087db5c28354be150_thumbnail_405x.webp"
   },
   {
     id: 402,
@@ -311,7 +311,7 @@ export const products = [
     name: "Falda Plisada Rosa",
     description: "Añade un toque femenino a tu outfit.",
     price: 19.990,
-    image: "https://images.pexels.com/photos/10492837/pexels-photo-10492837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S3ae4264b77964ac4a2f84e1cc56ca175l.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 403,
@@ -319,7 +319,7 @@ export const products = [
     name: "Falda Denim Mini",
     description: "Estilo juvenil y desenfadado.",
     price: 18.990,
-    image: "https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sce53e068c52448ac897901a54547217ev.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 404,
@@ -327,7 +327,7 @@ export const products = [
     name: "Falda Lápiz Midi",
     description: "Ajuste definido y elegante para oficina.",
     price: 25.990,
-    image: "https://images.pexels.com/photos/2983461/pexels-photo-2983461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S925e3f7d57024a6cb47b428dd8d5d5476.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 405,
@@ -335,7 +335,7 @@ export const products = [
     name: "Falda Asimétrica",
     description: "Corte moderno y original.",
     price: 23.990,
-    image: "https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sd149cfcf589247c59be7640c458880d8b.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 406,
@@ -343,7 +343,7 @@ export const products = [
     name: "Falda Floral Veraniega",
     description: "Ligera y con estampado alegre.",
     price: 27.990,
-    image: "https://images.pexels.com/photos/230782/pexels-photo-230782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S518e8571903641b1b1f55806d7658dd9L.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 407,
@@ -351,7 +351,7 @@ export const products = [
     name: "Falda Corta Negra",
     description: "Sencilla y elegante para cualquier ocasión casual.",
     price: 20.990,
-    image: "https://images.pexels.com/photos/2983465/pexels-photo-2983465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S594b61c968254d95bb9c5afeb5ffadcdt.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 408,
@@ -359,7 +359,7 @@ export const products = [
     name: "Falda Larga Estampada",
     description: "Comodidad y estilo veraniego.",
     price: 28.990,
-    image: "https://images.pexels.com/photos/2983466/pexels-photo-2983466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sb5152e76050d4ecca53a67309350367bZ.jpg_960x960q75.jpg_.avif"
   },
   {
     id: 409,
@@ -367,7 +367,7 @@ export const products = [
     name: "Falda Denim Recta",
     description: "Clásica, fácil de combinar.",
     price: 19.990,
-    image: "https://images.pexels.com/photos/2983467/pexels-photo-2983467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://hmchile.vtexassets.com/unsafe/412x0/center/middle/https%3A%2F%2Fhmchile.vtexassets.com%2Farquivos%2Fids%2F7341017-560-auto%2FMaxifalda-denim---Azul-denim-palido---H-M-CL.jpg%3Fv%3D638881479742370000"
   },
   {
     id: 410,
@@ -375,7 +375,7 @@ export const products = [
     name: "Falda Larga Negra",
     description: "Elegante y versátil para cualquier ocasión.",
     price: 25.990,
-    image: "https://images.pexels.com/photos/2983468/pexels-photo-2983468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S67deed5f86fb4ad6a15e5fc8eb88da17m.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 411,
@@ -383,7 +383,7 @@ export const products = [
     name: "Falda Capa Rosa",
     description: "Fluida y moderna para looks casuales.",
     price: 21.990,
-    image: "https://images.pexels.com/photos/2983469/pexels-photo-2983469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S028e4b7c6dda462cb2817122f8140557O.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 412,
@@ -391,7 +391,7 @@ export const products = [
     name: "Falda Midi Estampada",
     description: "Colorida y cómoda para el día a día.",
     price: 23.990,
-    image: "https://images.pexels.com/photos/2983470/pexels-photo-2983470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S6aca31b148f440f28bd51fcce034d7fez.jpg_640x640q75.jpg_.avif"
   },
 
   // ===== Pantalones (12) =====
@@ -401,7 +401,7 @@ export const products = [
     name: "Pantalón Beige Casual",
     description: "Cómodo y elegante para el día a día.",
     price: 34.990,
-    image: "https://images.pexels.com/photos/12338276/pexels-photo-12338276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sad430abdc5134635a06a1c2faa9e2f93A.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 502,
@@ -409,7 +409,7 @@ export const products = [
     name: "Pantalón Negro Skinny",
     description: "Ajuste perfecto para un look moderno.",
     price: 29.990,
-    image: "https://images.pexels.com/photos/12338277/pexels-photo-12338277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S5ddd39ddcee44c048ac8c2a762a3798bN.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 503,
@@ -417,7 +417,7 @@ export const products = [
     name: "Pantalón Blanco Recto",
     description: "Look minimalista y elegante.",
     price: 32.990,
-    image: "https://images.pexels.com/photos/12338278/pexels-photo-12338278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S377858eeeb7440518eee952484e13ce4g.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 504,
@@ -425,7 +425,7 @@ export const products = [
     name: "Jogger Cargo",
     description: "Comodidad urbana con bolsillos funcionales.",
     price: 27.990,
-    image: "https://images.pexels.com/photos/2983460/pexels-photo-2983460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S910689d5d6664a0e96083870668855b6w.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 505,
@@ -433,7 +433,7 @@ export const products = [
     name: "Pantalón Chino Slim",
     description: "Versátil para looks formales e informales.",
     price: 39.990,
-    image: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S3b6e64349948457cbe87c30169e55cc1d.jpg_640x640q75.jpg_.avif"
   },
   {
     id: 506,
@@ -441,7 +441,7 @@ export const products = [
     name: "Pantalón Denim Relax",
     description: "Corte cómodo y estilo casual.",
     price: 31.990,
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sc53f7e8e4745409cb6b1128976e49ea3G.jpg_480x480q75.jpg_.avif"
   },
   {
     id: 507,
@@ -449,7 +449,7 @@ export const products = [
     name: "Pantalón Gris Formal",
     description: "Ideal para oficina o reuniones formales.",
     price: 35.990,
-    image: "https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S752557b2afb34127a000655adcd28723L.jpg_480x480q75.jpg_.avif"
   },
   {
     id: 508,
@@ -457,7 +457,7 @@ export const products = [
     name: "Pantalón Verde Militar",
     description: "Estilo casual y moderno.",
     price: 29.990,
-    image: "https://images.pexels.com/photos/2983469/pexels-photo-2983469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://img.ltwebstatic.com/v4/j/spmp/2025/08/18/76/1755509511c9db81aeecdc7df20d4fbeb249a07746_thumbnail_405x.webp"
   },
   {
     id: 509,
@@ -465,7 +465,7 @@ export const products = [
     name: "Leggings Negros",
     description: "Cómodos y versátiles para cualquier look.",
     price: 19.990,
-    image: "https://images.pexels.com/photos/2983470/pexels-photo-2983470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S65b0231f8c2d4f1f8cbc8bfa412d99f5Q.jpg_480x480q75.jpg_.avif"
   },
   {
     id: 510,
@@ -473,7 +473,7 @@ export const products = [
     name: "Pantalón Rojo Casual",
     description: "Aporta color y estilo a tu outfit.",
     price: 32.990,
-    image: "https://images.pexels.com/photos/2983471/pexels-photo-2983471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S2ac3b97c4b764087b8a4da331ff65d9ag.jpg_480x480q75.jpg_.avif"
   },
   {
     id: 511,
@@ -481,7 +481,7 @@ export const products = [
     name: "Pantalón Jogger Gris",
     description: "Cómodo y urbano para cualquier día.",
     price: 28.990,
-    image: "https://images.pexels.com/photos/2983472/pexels-photo-2983472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sc8767c1e90814aa0ad1bf0033ab929908.jpg_480x480q75.jpg_.avif"
   },
   {
     id: 512,
@@ -489,7 +489,7 @@ export const products = [
     name: "Pantalón Denim Azul Claro",
     description: "Versátil y fresco para todos los días.",
     price: 31.990,
-    image: "https://images.pexels.com/photos/2983473/pexels-photo-2983473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/Sfaeb4b7fe0c840eb9c8bc2d8014d2d7aF.jpg_480x480q75.jpg_.avif"
   }
 ];
 
