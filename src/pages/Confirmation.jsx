@@ -126,16 +126,7 @@ export default function Confirmation() {
         </Card.Body>
       </Card>
 
-      {/* Advertencia sobre backend */}
-      {step !== 'payment_success' && (
-        <Alert variant="warning" className="mt-4 rounded-4 shadow-sm p-4">
-          <p className="mb-0">
-            <strong>Nota importante:</strong> En una aplicación real,
-            la confirmación del pago dependería del backend y la validación bancaria.
-            Esta interfaz simula el proceso para fines demostrativos.
-          </p>
-        </Alert>
-      )}
+    
     </Container>
   );
 }
