@@ -71,7 +71,7 @@ export const products = [
     name: "Vestido Maxi Veraniego",
     description: "Fluido y fresco, ideal para vacaciones.",
     price: 32.990,
-    image: "https://www.babbaki.com/wp-content/uploads/2025/03/vestido-veraniego-sin-mangas-floral.jpg"
+    image: "https://ae-pic-a1.aliexpress-media.com/kf/S8839b0df24a34a75b6d624af9044ebb9u.jpg_960x960q75.jpg_.avif"
   },
   {
     id: 110,
