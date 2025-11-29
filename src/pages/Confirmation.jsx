@@ -83,8 +83,8 @@ export default function Confirmation() {
             </h2>
 
             <p className="lead text-muted text-center mb-4">
-              Tu pago ha sido registrado y tu pedido está en preparación.
-              Lo recibirás en un plazo máximo de <strong>24 horas</strong>.
+              Tu pago ha sido registrado.Cuando nos envíes el numero de envío a nuestro numero de contacto de whattsap se confirmará nuevamente el pago, procediendo asi a la etapa del envio a domicilio de tu pedido que está en preparación.
+              Lo recibirás en un plazo máximo de <strong>24 horas</strong> y debes presentar tu numero de pedido.
             </p>
 
             <h5 className="fw-bold text-center">Número de Pedido</h5>
@@ -95,9 +95,9 @@ export default function Confirmation() {
               {orderNumber}
             </div>
 
-            <p className="text-muted text-center">
+            <div className="h5"><p className="text-muted text-center">
               Guarda este número para cualquier consulta relacionada con tu compra.
-            </p>
+            </p></div>
 
             <div className="d-grid gap-2 mt-4">
               <Button 
